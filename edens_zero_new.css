@@ -1,0 +1,341 @@
+/*Background*/
+body {
+  background: url(%%Background%%) repeat fixed center;
+  overflow: auto;
+  -ms-grid-columns: auto 300px;
+      grid-template-columns: auto 300px;
+  -ms-grid-rows: 100px 2em auto;
+      grid-template-rows: 100px 2em auto;
+}
+
+/*Mail*/
+#mail img {
+  display: none;
+}
+
+#mail .havemail {
+  background: url(%%mail%%) no-repeat bottom center;
+  width: 15px;
+  height: 15px !important;
+  display: inline-block;
+}
+
+#mail .nohavemail {
+  background: url(%%nomail%%) no-repeat bottom center;
+  width: 15px;
+  height: 15px !important;
+  display: inline-block;
+}
+
+/*Snoo*/
+#header {
+  -ms-grid-column: 0;
+      grid-column-start: 0;
+  grid-column-end: 2;
+  -ms-grid-row: 0;
+      grid-row-start: 0;
+  grid-row-end: 1;
+}
+
+#header #header-bottom-left {
+  margin: 0;
+}
+
+#header #header-bottom-left .redditname {
+  display: block !important;
+  content: none;
+}
+
+#header #header-bottom-left .redditname a {
+  content: none !important;
+  font-size: 0;
+  display: inline-block !important;
+  background-image: url(%%logo%%);
+  background-position: 0 !important;
+  background-repeat: no-repeat;
+  width: 294px;
+  height: 60px;
+}
+
+#header #header-bottom-left .redditname a:hover {
+  background-image: url(%%logohover%%);
+}
+
+#header #header-bottom-left .tabmenu {
+  position: relative;
+  bottom: -2em;
+  margin: 0;
+}
+
+/* Background on .content */
+.content {
+  background: #fff;
+  background: rgba(255, 255, 255, 0.8);
+}
+
+.side {
+  background: none;
+  float: none;
+  -ms-grid-column: 1;
+      grid-column-start: 1;
+  grid-column-end: 2;
+  -ms-grid-row: 3;
+      grid-row-start: 3;
+  grid-row-end: 3;
+  margin-bottom: 3em;
+}
+
+#header-img.default-header {
+  position: absolute;
+  left: 310px;
+  bottom: -3px;
+  height: 180px;
+  width: 214px;
+  background: url(%%mclogo%%);
+}
+
+#header-img.default-header:hover {
+  position: absolute;
+  left: 310px;
+  bottom: -3px;
+  height: 180px;
+  width: 214px;
+  background: url(%%mchover%%);
+}
+
+/* Flair */
+.author[href$="/11thDoctr"], .author[href$="/AstonishingSpiderMan"], .author[href$="/YonkouProductions"] {
+  font-size: 12px;
+  color: white !important;
+  text-decoration: none;
+}
+
+a.author[href$="11thDoctr"]:before, a.author[href$="AstonishingSpiderMan"]:before, a.author[href$="YonkouProductions"]:before {
+  text-decoration: none;
+  font-size: 12px !important;
+  text-shadow: 1px 1px #000000;
+  font-weight: bold;
+}
+
+a.author[href$="11thDoctr"], .res a.author[href$="11thDoctr"], a.author[href$="AstonishingSpiderMan"], .res a.author[href$="AstonishingSpiderMan"], a.author[href$="YonkouProductions"], .res a.author[href$="YonkouProductions"] {
+  color: white !important;
+  padding: 1px 4px 1px 4px;
+  border-radius: 3px;
+}
+
+a.author[href$="YonkouProductions"]:before {
+  content: "";
+  color: #FFFFFF !important;
+}
+
+a.author[href$="YonkouProductions"], .res a.author[href$="YonkouProductions"] {
+  background-color: #6a71c7 !important;
+}
+
+a.author[href$="AstonishingSpiderMan"]:before {
+  content: "";
+  color: #FFFFFF !important;
+}
+
+a.author[href$="AstonishingSpiderMan"], .res a.author[href$="AstonishingSpiderMan"] {
+  background-color: #008080 !important;
+}
+
+a.author[href$="11thDoctr"]:before {
+  content: "";
+  color: white !important;
+}
+
+a.author[href$="11thDoctr"], .res a.author[href$="11thDoctr"] {
+  background-color: #B22222 !important;
+}
+
+.flair {
+  background: url(%%ezflair%%) -9999px no-repeat;
+  font-size: small !important;
+  border: 1px;
+  padding: 0;
+  overflow: hidden;
+  text-indent: 10px;
+  line-height: 30px;
+  vertical-align: middle;
+  display: inline-block;
+  white-space: nowrap;
+  position: relative;
+  color: transparent !important;
+  border-radius: 10px;
+  border-color: black;
+  border-style: solid;
+}
+
+.flair[title]:after {
+  content: attr(title);
+  position: absolute;
+  color: #FFF;
+  font-family: Calibri;
+  font-size: 110%;
+  top: 0;
+  left: -10px;
+  background: #C00;
+  -webkit-box-shadow: 0 0 10px #fff;
+          box-shadow: 0 0 10px #fff;
+  padding: 0 5px;
+  border-radius: 3px 3px 3px 3px;
+  white-space: nowrap;
+  pointer-events: none;
+  text-indent: 0;
+  opacity: 0;
+}
+
+.flair[title]:active:after, .flair[title]:active:before, .flair[title]:hover:after, .flair[title]:hover:before {
+  -webkit-transition: opacity 0.35s cubic-bezier(0.1, 0.235, 0.215, 1.195), all 0.35s cubic-bezier(0.1, 0.235, 0.215, 1.195);
+  transition: opacity 0.35s cubic-bezier(0.1, 0.235, 0.215, 1.195), all 0.35s cubic-bezier(0.1, 0.235, 0.215, 1.195);
+  opacity: 1;
+  -webkit-box-shadow: 0 1px 0 rgba(46, 46, 44, 0.5);
+          box-shadow: 0 1px 0 rgba(46, 46, 44, 0.5);
+  left: 40px;
+}
+
+.flair:hover {
+  overflow: visible;
+  color: transparent;
+}
+
+.flair[class*=flair-] {
+  width: 40px;
+  height: 40px;
+  line-height: 30px;
+  text-indent: -9999em;
+  vertical-align: middle;
+}
+
+.flair[class*="flair-"].flair[title]:after {
+  top: 10px;
+  margin-left: 20px;
+}
+
+.flair-Yonkou {
+  background-position: 0 0;
+}
+
+.flair-Spidey {
+  background-position: 0 -40px;
+}
+
+.flair-Doctr {
+  background-position: 0 -80px;
+}
+
+.flair-01 {
+  background-position: 0 -120px;
+}
+
+.flair-02 {
+  background-position: 0 -160px;
+}
+
+.flair-03 {
+  background-position: 0 -200px;
+}
+
+.flair-04 {
+  background-position: 0 -240px;
+}
+
+.flair-05 {
+  background-position: 0 -280px;
+}
+
+.flair-06 {
+  background-position: 0 -320px;
+}
+
+.flair-07 {
+  background-position: 0 -360px;
+}
+
+.flair-08 {
+  background-position: 0 -400px;
+}
+
+.flair-09 {
+  background-position: 0 -440px;
+}
+
+.flair-10 {
+  background-position: 0 -480px;
+}
+
+.flair-11 {
+  background-position: 0 -520px;
+}
+
+.flair-12 {
+  background-position: 0 -560px;
+}
+
+.flair-13 {
+  background-position: 0 -600px;
+}
+
+.flair-14 {
+  background-position: 0 -640px;
+}
+
+.flair-15 {
+  background-position: 0 -680px;
+}
+
+.flair-16 {
+  background-position: 0 -720px;
+}
+
+.flair-17 {
+  background-position: 0 -760px;
+}
+
+.flair-18 {
+  background-position: 0 -800px;
+}
+
+.flair-19 {
+  background-position: 0 -840px;
+}
+
+.flair-20 {
+  background-position: 0 -880px;
+}
+
+.flair-21 {
+  background-position: 0 -920px;
+}
+
+/* Thumbnails */
+.self .thumbnail {
+  background: url(%%thumbnails%%) no-repeat 0 0;
+  width: 70px;
+  height: 70px;
+}
+
+.spoiler .thumbnail {
+  background: url(%%thumbnails%%) no-repeat 0 -70px;
+  width: 70px;
+  height: 70px;
+}
+
+.stickied.link .thumbnail {
+  background: url(%%thumbnails%%) no-repeat 0 -140px;
+  width: 70px;
+  height: 70px;
+}
+
+.over18 .thumbnail img {
+  display: none;
+}
+
+.over18 .thumbnail {
+  background: url(%%thumbnails%%);
+  background-position: 0 -210px;
+  height: 70px;
+}
+/*# sourceMappingURL=edens_zero_new.css.map */

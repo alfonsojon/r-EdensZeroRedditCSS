@@ -1,0 +1,545 @@
+/*Background*/
+body {
+    background: url(%%Background%%) repeat fixed center;
+}
+
+/*Mail*/
+#mail {
+    img {
+        display: none
+    }
+    .havemail {
+        background: url(%%mail%%) no-repeat bottom center;
+        width: 15px;
+        height: 15px !important;
+        display: inline-block;
+    }
+    .nohavemail {
+        background: url(%%nomail%%) no-repeat bottom center;
+        width: 15px;
+        height: 15px !important;
+        display: inline-block;
+    }
+}
+
+/* Subscribe Buttons */
+.fancy-toggle-button {
+    background-image: none;
+    border: 0px;
+    border-radius: 2px;
+    font-weight: normal !important;
+    .add {
+        background-image: none;
+        background-color: #D24256 !important;
+        border: 0px;
+        border-radius: 2px;
+        padding: 3px 6px;
+        font-weight: normal !important;
+    }
+    .remove {
+        border: 0px;
+        border-radius: 2px;
+        padding: 3px 6px;
+        background-color: #8b4510;
+        font-weight: normal !important;
+    }
+}
+.RESshortcutside, .RESDashboardToggle {
+    margin-right: 5px;
+    margin-top: 2px;
+    color: white; background-image: none !important;
+    cursor: pointer;
+    text-align: center;
+    width: 68px;
+    border: 0px solid #444 !important;
+    padding: 3px 6px !important;
+    background-color: #D24256 !important;
+    border-radius: 2px !important;
+    font-weight: normal !important;
+}
+.RESshortcutside.remove, .RESDashboardToggle.remove {
+    background-image: none !important;
+    background-color: #8B4510 !important;
+    border: 0px !important;
+    border-radius: 2px !important;
+    padding: 3px 6px !important;
+    font-weight:normal;
+}
+.fancy-toggle-button .remove:hover, .RESshortcutside.remove:hover, .RESDashboardToggle.remove:hover, .RESDashboardToggle.remove:hover{
+    background-color: #C76A70!important;
+}
+.fancy-toggle-button .add:hover, .RESshortcutside:hover, .RESDashboardToggle:hover{
+    background-color:#FF0033 !important;
+}
+
+/* Hide needless shit */
+.sidebox .create {
+    display: none !important;
+}
+/* Header stuff */
+@keyframes HeaderScroll {
+    0% {
+        background-position: 0 0;
+    }
+    100% {
+        background-position: -2790px 0
+    }
+}
+#header {
+    $header-height: 210px;
+    min-height: $header-height;
+    background: url("%%ScrollingBanner%%");
+    animation: HeaderScroll 120s linear infinite;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-content: flex-end;
+    align-items: flex-start;
+    width: 100%;
+    margin-bottom: 3em;
+    #sr-header-area {
+        order: 0;
+        flex: 0 1 100%;
+        align-self: auto;
+        order: -1;
+        bottom: 0;
+        position: absolute;
+        top: 0;
+        width: 100%;
+    }
+    /* Reset .tabmenu and #header-bottom-right styles */
+    .tabmenu,#header-bottom-right {
+        border-radius: 0;
+        padding: 0;
+        background: none;
+        position: inherit;
+        margin: -2em;
+        top: initial;
+        bottom: initial;
+        left: initial;
+        right: initial;
+        position: absolute;
+        bottom: 0;
+    }
+    #header-bottom-left {
+        order: 0;
+        flex: 1 1 auto;
+        align-self: auto;
+        left: 0;
+        .redditname {
+            display: block !important;
+            content: none;
+            a {
+                content: none !important;
+                &:hover {
+                    background-image: url(%%logohover%%);
+                }
+                font-size: 0;
+                display: inline-block !important;
+                background-image: url(%%logo%%);
+                background-position: 0 !important;
+                background-repeat: no-repeat;
+                width: 294px;
+                height: 60px;
+            }
+        }
+    }
+    #header-bottom-right {
+        order: 0;
+        flex: 0 1 430px;
+        align-self: auto;
+        right: 0;
+    }
+}
+
+/* Body */
+.listing-page .link:hover {
+    background: transparent;
+    transition: background 0.3s !important;
+    &:hover {
+        background: #3d54a9;
+    }
+}
+.link {
+    background: #415ab3;  box-shadow: 0 0 5px #000 ;
+    padding: 15px;
+    border: 2px solid #fff;
+    margin: 15px;
+    border-radius: 5px;
+    .rank {
+        display: none;
+    }
+}
+.thing {
+    background: #fff;
+    background: rgba(255,255,255,0.9);
+    *.a {
+        color: #fff!important;
+        text-shadow: 1px 1px 2px #0029c1;
+        &:visited {
+            color: #fff !important;
+        }
+    }
+}
+.tabmenu {
+    li {
+        margin: 0;
+    }
+    span,a {
+        background: #112C5D;
+        color: #fff;
+        padding: 0.25em;
+        border-radius: 3px;
+    }
+}
+
+/* Background on .content */
+.content {
+    background: #fff;
+    background: rgba(255,255,255,0.8);
+
+}
+.side {
+    background: none;
+    margin-bottom: 3em;
+    .spacer {
+        .redditname {
+            font-size: 0;
+            background-image: url("%%sidebar%%");
+            padding: 213px 145.2px;
+            background-repeat: no-repeat;
+        }
+    }
+}
+#header-img.default-header {
+    position: absolute;
+    left: 310px;
+    bottom: -3px;
+    height: 180px;
+    width: 214px;
+    background: url(%%mclogo%%);
+}
+#header-img.default-header:hover {
+    position: absolute;
+    left: 310px;
+    bottom: -3px;
+    height: 180px;
+    width: 214px;
+    background: url(%%mchover%%);
+}
+.toggle, .icon-menu * {
+    background: transparent !important;
+}
+/* Footer */
+.footer-parent {
+    .footer {
+        border: none;
+        background-image: url(%%bottom%%);
+        padding: none;
+        width: 843px;
+        height: 355px;
+        max-width: initial;
+        * {
+            margin: 0;
+            padding: 0;
+            border: none;
+            font-size: 0 !important;
+            color: rgba(0,0,0,1) !important;
+        }
+    }
+}
+/* Flair */
+.author[href$="/11thDoctr"], .author[href$="/AstonishingSpiderMan"], .author[href$="/YonkouProductions"] {
+    font-size: 12px;
+    color: white !important;
+    text-decoration: none;
+    &:before {
+        text-decoration: none;
+        font-size: 12px !important;
+        text-shadow: 1px 1px #000000;
+        font-weight: bold;
+    }
+    &.res {
+        color: white !important;
+        padding: 1px 4px 1px 4px;
+        -moz-border-radius: 3px;
+        -webkit-border-radius: 3px;
+        border-radius: 3px
+    }
+}
+
+a.author[href$="YonkouProductions"]:before {
+    content: "";
+    color:#FFFFFF !important;
+}
+a.author[href$="YonkouProductions"],.res a.author[href$="YonkouProductions"]{
+    background-color:rgb(106, 113, 199) !important;
+}
+a.author[href$="AstonishingSpiderMan"]:before {
+    content: "";
+    color: #FFFFFF !important;
+}
+a.author[href$="AstonishingSpiderMan"],.res a.author[href$="AstonishingSpiderMan"]{
+    background-color: #008080 !important;
+}
+a.author[href$="11thDoctr"]:before {
+    content: ""; color: white !important;
+}
+a.author[href$="11thDoctr"],.res a.author[href$="11thDoctr"]{
+    background-color:#B22222 !important;
+}
+
+.flair {
+    background: url(%%ezflair%%) -9999px no-repeat;
+    font-size: small !important;
+    border: 1px;
+    padding: 0;
+    overflow: hidden;
+    text-indent: 10px;
+    line-height: 30px;
+    vertical-align: middle;
+    display: inline-block;
+    white-space: nowrap;
+    position: relative;
+    color: transparent !important;
+    border-radius: 10px; border-color: black;
+    border-style: solid;
+    &:after {
+        content: attr(title);
+        position: absolute;
+        color: #FFF;
+        font-family: Calibri;
+        font-size: 110%;
+        top: 0;
+        left: -10px;
+        background: #C00;
+        box-shadow: 0 0 10px #fff;
+        padding: 0 5px;
+        border-radius: 3px 3px 3px 3px;
+        white-space: nowrap;
+        pointer-events: none;
+        text-indent: 0;
+        opacity: 0;
+    }
+    &:hover {
+        overflow: visible;
+        color: transparent;
+    }
+}
+.flair[title]:active:after, .flair[title]:active:before, .flair[title]:hover:after, .flair[title]:hover:before {
+    transition: opacity .35s cubic-bezier(.1, .235, .215, 1.195),all .35s cubic-bezier(.1, .235, .215, 1.195);
+    opacity:1;
+    box-shadow: 0 1px 0 rgba(46, 46, 44, .5);
+    left:40px;
+}
+.flair[class*=flair-]{
+    width: 40px;
+    height: 40px;
+    line-height: 30px;
+    text-indent: -9999em;
+    vertical-align: middle;
+    &:flair[title]:after {
+        top: 10px;
+        margin-left: 20px;
+    }
+}
+
+.flair-Yonkou {
+    background-position: 0 0;
+}
+.flair-Spidey {
+    background-position: 0 -40px;
+}
+.flair-Doctr {
+    background-position: 0 -80px;
+}
+.flair-01 {
+    background-position: 0 -120px;
+}
+.flair-02 {
+    background-position: 0 -160px;
+}
+.flair-03 {
+    background-position: 0 -200px;
+}
+.flair-04 {
+    background-position: 0 -240px;
+}
+.flair-05 {
+    background-position: 0 -280px;
+}
+.flair-06 {
+    background-position: 0 -320px;
+}
+.flair-07 {
+    background-position: 0 -360px;
+}
+.flair-08 {
+    background-position: 0 -400px;
+}
+.flair-09 {
+    background-position: 0 -440px;
+}
+.flair-10 {
+    background-position: 0 -480px;
+}
+.flair-11 {
+    background-position: 0 -520px;
+}
+.flair-12 {
+    background-position: 0 -560px;
+}
+.flair-13 {
+    background-position: 0 -600px;
+}
+.flair-14 {
+    background-position: 0 -640px;
+}
+.flair-15 {
+    background-position: 0 -680px;
+}
+.flair-16 {
+    background-position: 0 -720px;
+}
+.flair-17 {
+    background-position: 0 -760px;
+}
+.flair-18 {
+    background-position: 0 -800px;
+}
+.flair-19 {
+    background-position: 0 -840px;
+}
+.flair-20 {
+    background-position: 0 -880px;
+}
+.flair-21 {
+    background-position: 0 -920px;
+}
+
+/* Thumbnails */
+.thumbnail {
+    width: 70px;
+    height: 70px;
+}
+.self .thumbnail {
+    background: url(%%thumbnails%%) no-repeat 0 0;
+}
+.spoiler .thumbnail {
+    background: url(%%thumbnails%%) no-repeat 0 -70px;
+}
+.stickied.link .thumbnail {
+    background: url(%%thumbnails%%) no-repeat 0 -140px;
+}
+.over18 .thumbnail {
+    background: url(%%thumbnails%%);
+    background-position: 0 -210px;
+    img {
+        display: none;
+    }
+}
+
+/* Submit Page */
+.roundfield textarea, .roundfield input[type=text], .roundfield input[type=url], .roundfield input[type=password], .roundfield input[type=number]{font-size: 100%; width: 492px; padding: 3px; margin: 0; border: 1px solid #369}
+.gray {color: #fff}
+.submit-page {
+    #newlink.submit.content {
+        form .spacer+.spacer {
+            margin: 0
+        }
+        .tabmenu {
+            .formtab {
+                padding: 0;
+                border: none;
+            }
+            .selected {
+                a:hover {
+                    background-color: #369;
+                }
+            }
+            a {
+                font-size: 16px;
+                background-color: #369;
+                color: #fff;
+                left: 0;
+                &:hover {
+                    background-color: #e7e9f6;
+                }
+            }
+            position:relative;
+            top: -40px;
+            left: 0;
+            }
+        .btn {
+            width: 61%;
+            line-height: 41px;
+            height: 42px;
+            margin-top: 24px;
+            background-color: #369;
+            border: none;
+            color: #fff;
+            box-shadow: 0 1px 5px rgba(0, 0, 0, .24);
+            cursor: pointer;
+            &:hover {
+                box-shadow: 0 2px 12px rgba(0, 0, 0, .48);
+                color: #fff;
+                background-color: #B24F4E;
+            }
+        }
+    }
+    .formtabs-content {
+        border-top: 0;
+        padding-top: 0;
+    }
+    .roundfield {
+        padding: 16px !important;
+        width: 524px; background-color: #fff;
+        border-radius: 2px;
+        margin-bottom: 16px;
+        box-shadow: 0 1px 5px rgba(0, 0, 0, .16);
+        border: 1px solid #444240;
+        color: #fff;
+        background: rgba(102, 153, 204, 0.87);
+    }
+    .infobar {
+        width: 524px;
+        margin: -10px 0 0;
+        padding: 16px;
+        color: #fff;
+        background: rgba(102, 153, 204, 0.87);
+        border: none;
+        box-shadow: 0 1px 5px rgba(0, 0, 0, .24);
+    }
+}
+
+h4,h5 {
+    font-weight: 700 !important;
+}
+.submit-page 
+.submit-page 
+.content.submit .info-notice {background: #369; border: 1px solid #369; padding: 9px; margin-bottom: 12px; font-size: larger}
+.submit-page .roundfield .usertext-edit textarea {background-color: transparent; background-size: 506px 108px; background-repeat: no-repeat; -webkit-transition: background 0.25s linear; -moz-transition: background 0.25s linear; -o-transition: background 0.25s linear; transition: background 0.25s linear}
+.submit-page #header-bottom-left {top: 36px; left: 16px; height: 0}
+.roundfield textarea {width: 516px; background-color: #fff}
+.submit_text.roundfield.enabled {padding-bottom: 102px!important}
+#newlink>div.formtabs-content>div:nth-child(6)>div>span>div>h3 {color: #ff0; text-align: center; font-size: small}
+.submit-page .roundfield input[type=url]{width: 515px}
+.submit-page .footer-parent {padding-top: 15px; background: 0 0; margin-top: 40px}
+.submit-page {background-color: #fff!important; background-image: url(%%submit%%); background-repeat: no-repeat; background-size: auto; background-position: center; background-attachment: fixed}
+.submit-page .footer{margin-left: 470px}
+.submit-page .bottommenu{color:#000; margin-left: -355px}
+.submit-page .debuginfo{color:#FFF}
+.submit-page .content {z-index: 1; margin-top: 40px!important; width: 923px; margin: 0 auto; padding-top: 1px; background-repeat: no-repeat; background-position: bottom right}
+.submit-page #header-img {margin: 7px 0 0 27px; width: 73px; height: 73px}
+.submit-page #header {height: 0}
+.submit-page #header, .submit-page #header-img {display: none!important}
+.submit-page .roundfield .usertext-edit textarea {background-color: #fff; background-size: 506px 108px; border-color: red}
+.submit-page #header-bottom-right {top: 18px!important}
+#suggested-reddits, .submit-page .content>h1,.submit-page .side {display: none}
+.submit-page #header-bottom-right {top: 18px!important}
+.pagename {font-size: 0}
+html {min-height: 100%}
+.submit-page #newlink.submit.content .tabmenu.formtab a {padding: 16px; width: 246px; display: inline-block; text-align: center; background-color: #369!important; color: #FFFFFF!important; text-transform: uppercase; font-weight: 700; transition: all .25s ease; font-size: 16px; border: none}
+.submit-page a {color: #fff}
+.submit-page .md a {color: #0079D3!important}

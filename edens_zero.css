@@ -1,0 +1,324 @@
+/* Founder of Subreddit */
+#sr-header-area {opacity:.1}
+#sr-header-area:hover {opacity:1}
+
+/* Announcement Bar */
+.side h3:nth-of-type(1) {position: absolute; top: 225px; left: 25px; padding: 7px; background-color: #FFF; border: 1px solid #00CED1; border-left-width: 3px; text-align: center; color: #369; font-size: 1.5em; font-variant: small-caps; right: 355px}
+.side h3:nth-of-type(1) a {color: #369}
+.side h3:nth-of-type(1) a:hover {color: #000080}
+
+/* Discord */
+.side p > a[href^="https://discord.gg/fairytail"] {display:block; height:99px; width: 290px; background: url("%%discord%%") no-repeat 0 0px; margin-bottom: 4px; background-repeat: no-repeat}
+
+/* Change Users Online Text */
+.subscribers .word, .users-online .word{display:none}
+.subscribers .number:after {content: " Cruising the Cosmos"}
+.users-online .number:after {content: " Visiting Blue Garden"}
+
+/* Ads */
+div > iframe {display:none}
+#ad-frame, #ad_main {display: none}
+body{background: #eeeeee; font-family:'Open Sans', 'Segoe UI' , 'Helvetica neue', Meiryo, sans-serif}
+#siteTable_organic {opacity: 0; pointer-events: none; position: absolute}
+.ad300x250 {border: 0px; overflow: hidden; width: 0px; height: 0px; }
+#header .tabmenu [href$="/ads/"]{visibility: hidden; width: 0; padding: 0; margin: 0; display: inline-block}
+#header .tabmenu [href$="/controversial/"]{visibility: hidden; width: 0; padding: 0; margin: 0; display: inline-block}
+.bottommenu {color: transparent; font-size: 0; clear: both;}
+.footer {display: none}
+#header .tabmenu [href$="/ads/"]{visibility: hidden; width: 0; padding: 0; margin: 0; display: inline-block}
+#header .tabmenu [href$="/controversial/"]{visibility: hidden; width: 0; padding: 0; margin: 0; display: inline-block}
+.dfp-ad-container {overflow: none; width: 0px; height: 0px}
+#ad-frame, #ad_main {display: none}
+.ad300x250, .sponsor-300-250 {border: 0px; overflow: none; width: 0px; height: 0px}
+
+/* Comment Collapse */
+body .comment, .res-commentBoxes .comment {padding-left: 8px !important; position:relative; padding-left: 10px !important}
+.comment .expand {margin-right: 3px; position: absolute; left: -4px; height: 100%; top: -1px; padding: 0 2px; border: 1px solid transparent}
+
+/* Beta Beaker */
+.beta-hint a {position: absolute; text-indent: 24px; white-space: nowrap; overflow: hidden; margin-left: -24px; display: inline-block; width: 20px; height: 13px; background: transparent center left no-repeat; background-size: contain}
+
+/* side bar changes */
+.usertext-body table {font-size: 13px!important;}
+.flairsample-left {text-align: left!important;}
+p.tagline {padding: 5px 0;}
+
+/* Side */
+.side{background-color:transparent; margin: 0 20px; border-bottom:0px solid #AAA}
+.titlebox form.toggle, .leavemoderator{background-color:transparent}
+.side .spacer .titlebox, .side .spacer .sidecontentbox .content {padding: 5px; background: white; box-shadow: 0px 2px 4px rgba(0,0,0,.2); border-radius:1px; border:2px solid transparent; margin-top: 0px; margin-bottom: 0px;}
+.titlebox form.toggle, .leavemoderator{background-color:white}
+.sidecontentbox .title h1 {display: inline; text-transform: uppercase; margin: 0; color: gray; font-size: 130%}
+.sidebox.create {display: none}
+.sidecontentbox .content{border:none}
+.md-container {margin-top: 10px}
+.side .md {font-size: smaller}
+
+/* Submit Button */
+.sidebox .morelink {background: none; border: 0px solid transparent; line-height: 37px; height: 37px; box-shadow: 1px 2px 4px rgba(0,0,0,.2)}
+.submit-link, .submit-text {letter-spacing: .07em; width: 300px; background-color: #063b94!important; background-position: 0 -32px;border-radius:2px}
+.submit-link:hover, .submit-text:hover {background-color:#5f96f2!important}
+.submit-link a, .submit-text a {color: white!important; font-weight: normal; font-size: 16px; text-transform: capitalize}
+.sidebox .nub {display: none}
+.side .spacer {margin: 7px 0 12px 0;}
+.side .spacer:nth-child(n+5):nth-child(-n+10) {box-shadow: 1px 2px 4px rgba(0,0,0,.2);}
+.submit-link > .morelink {margin-top: 48px}
+
+/* Lists */
+body.res-nightmode .md > ul, body.res-nightmode .md > ol {border-color: #666}
+.md ul, .md ol {margin: 10px 0px; padding: 6px; border-radius:2px}
+body.res-nightmode .md ul, body.res-nightmode .md ol {background-color: #FFF}
+.md ul {list-style: disc inside}
+.md ol {list-style: none}
+.md ul li, .md ol li {padding: 4px 8px; border-radius:2px}
+.md ul li ul, .md ol li ol {margin: 8px 4px}
+.md ol {counter-reset: inc 0}
+ol li p, ul li p {display: inline}
+.md ol li:before {counter-increment: inc 1; content: counter(inc, decimal) '. '; margin-right: 4px; color: #999}
+
+/* Subscribe Buttons */
+.fancy-toggle-button {background-image: none; border: 0px; border-radius: 2px; font-weight: normal!important}
+.fancy-toggle-button .add {background-image: none; background-color: #D24256!important; border: 0px; border-radius: 2px; padding: 3px 6px; font-weight: normal!important}
+.fancy-toggle-button .remove {border: 0px; border-radius: 2px; padding: 3px 6px; background-color: #8B451; font-weight: normal!important}
+.RESshortcutside, .RESDashboardToggle {margin-right: 5px; margin-top: 2px; color: white; background-image: none!important; cursor: pointer; text-align: center; width: 68px; border: 0px solid #444!important; padding: 3px 6px!important; background-color: #D24256!important; border-radius: 2px!important; font-weight: normal!important}
+.RESshortcutside.remove, .RESDashboardToggle.remove {background-image: none!important; background-color: #8B451!important; border: 0px!important; border-radius: 2px!important; padding: 3px 6px!important; font-weight:normal}
+.fancy-toggle-button .remove:hover, .RESshortcutside.remove:hover, .RESDashboardToggle.remove:hover, .RESDashboardToggle.remove:hover{background-color: #C76A70!important}
+.fancy-toggle-button .add:hover, .RESshortcutside:hover, .RESDashboardToggle:hover{background-color:#FF0033!important}
+
+/* Score */
+.linkinfo {padding:15px; border:none; background-color: #FFFFFF; box-shadow: 0px 2px 4px rgba(0,0,0,.2); border-radius: 2px}
+.comments-page .side .linkinfo .date {color: #888}
+.linkinfo .score .number {font-size: 22px; font-weight: bold}
+.linkinfo .score .word {font-size: 15px; font-weight: bold}
+.linkinfo .totalvotes {font-size: 80%}
+.linkinfo .shortlink {font-size: 80%; margin-top: 3px}
+.linkinfo .shortlink input {border: 1px solid #E5E5E5; padding: 3px 6px}
+
+/* Search */
+#search input[type=submit]{top: 7px; position: relative; z-index: 200}
+body.res-nightmode #search {background-color: transparent; border-color: #BBB}
+.side .spacer:nth-of-type(1), .side .spacer:nth-of-type(2) {margin: 10}
+#search {white-space: nowrap}
+.side .spacer #search input[type=text]{z-index: 100; border: none; font-size: 14px; width: 300px; background: white; padding: 3px; margin-bottom: 10px; padding: 10px 25px 10px 16px; border-radius: 2px; margin-top: 35px; box-shadow: 0px 2px 4px rgba(0,0,0,.2); border: 1px solid transparent}
+.res-nightmode .side .spacer #search input[type=text]{background-color: #444}
+#searchexpando, #moresearchinfo {box-shadow: 0px 2px 4px rgba(0,0,0,.2); border-radius: 2px; border:0px; position: absolute; z-index: 99; width: 300px; right: 10px; text-align:center}
+
+/* Comments Page */
+.comment {margin: 0 7px 14px 10px!important; padding: 5px 1px 0 5px!important; border-radius: 3px}
+.comment .child, .comment .showreplies{border-left:none}
+body .comment, .res-commentBoxes .content .comment {box-shadow: 0px 1px 5px rgba(0,0,0,0.16); border: 1px solid transparent!important}
+body .comment, body .comment .comment .comment, body .comment .comment .comment .comment .comment, body .comment .comment .comment .comment .comment .comment .comment, body .comment .comment .comment .comment .comment .comment .comment .comment .comment, .res-commentBoxes .content .comment, .res-commentBoxes .content .comment .comment .comment, .res-commentBoxes .content .comment .comment .comment .comment .comment, .res-commentBoxes .content .comment .comment .comment .comment .comment .comment .comment, .res-commentBoxes .content .comment .comment .comment .comment .comment .comment .comment .comment .comment {background-color: #FFFFFF!important}
+body .comment .comment, body .comment .comment .comment .comment, body .comment .comment .comment .comment .comment .comment, body .comment .comment .comment .comment .comment .comment .comment .comment, body .comment .comment .comment .comment .comment .comment .comment .comment .comment .comment, .res-commentBoxes .content .comment .comment, .res-commentBoxes .content .comment .comment .comment .comment, .res-commentBoxes .content .comment .comment .comment .comment .comment .comment, .res-commentBoxes .content .comment .comment .comment .comment .comment .comment .comment .comment, .res-commentBoxes .content .comment .comment .comment .comment .comment .comment .comment .comment .comment .comment {background-color: #F7F7F8!important}
+.res-nightmode body .comment, .res-nightmode body .comment .comment .comment, .res-nightmode body .comment .comment .comment .comment .comment, .res-nightmode body .comment .comment .comment .comment .comment .comment .comment, .res-nightmode body .comment .comment .comment .comment .comment .comment .comment .comment .comment, .res-nightmode .res-commentBoxes .content .comment, .res-nightmode .res-commentBoxes .content .comment .comment .comment, .res-nightmode .res-commentBoxes .content .comment .comment .comment .comment .comment, .res-nightmode .res-commentBoxes .content .comment .comment .comment .comment .comment .comment .comment, .res-nightmode .res-commentBoxes .content .comment .comment .comment .comment .comment .comment .comment .comment .comment {background-color: #222222!important}
+.res-nightmode body .comment .comment, .res-nightmode body .comment .comment .comment .comment, .res-nightmode body .comment .comment .comment .comment .comment .comment, .res-nightmode body .comment .comment .comment .comment .comment .comment .comment .comment, .res-nightmode body .comment .comment .comment .comment .comment .comment .comment .comment .comment .comment, .res-nightmode .res-commentBoxes .content .comment .comment, .res-nightmode .res-commentBoxes .content .comment .comment .comment .comment, .res-nightmode .res-commentBoxes .content .comment .comment .comment .comment .comment .comment, .res-nightmode .res-commentBoxes .content .comment .comment .comment .comment .comment .comment .comment .comment, .res-nightmode .res-commentBoxes .content .comment .comment .comment .comment .comment .comment .comment .comment .comment .comment {background-color: #373737!important}
+.link .usertext-body .md{background-color: transparent; border: none; border-radius: 0}
+
+/* Buttons */
+.btn, button, .side a[href*="/#btn"]{background-color:#D24256; border:none; color:#FFF; padding:6px; margin:5px 5px 5px 0; cursor:pointer; font-size:12px; text-transform: lowercase; font-family: "Open Sans","Segoe UI","Helvetica neue",Meiryo,sans-serif; border-radius:2px; box-shadow: 0px 2px 4px rgba(0,0,0,.2)}
+.side a[href*='/#btn']{text-align: center; display: block; width: auto; font-weight: normal; letter-spacing: 0; line-height: 29px; margin:10px 0px; border-radius:2px; box-shadow: 0px 2px 4px rgba(0,0,0,.2)}
+body.res-nightmode .btn, body.res-nightmode button, body.res-nightmode .side a[href*='/#btn']{color: #444 !important; background-color: #CCC !important}
+.btn a {color:#FFF}
+body.res-nightmode .btn a {color: #444 !important}
+.btn:hover,button:hover,.side a[href*='/#btn']:hover {background-color:#FF0033}
+body.res-nightmode .btn:hover, body.res-nightmode button:hover, body.res-nightmode .side a[href*='/#btn']:hover {background-color:#DDD !important}
+
+/* Body */
+.listing-page .link:hover {background: transparent; transition: background 0.3s!important;}
+.listing-page .link:hover {background: #3d54a9a8;}
+.link {background: #415ab37a;  box-shadow: 0 0 5px #000000 ; padding: 15px; border: 2px solid #fff; margin-right: 15px; margin-left: 15px; left: -9px; margin-bottom: 10px; border-radius: 5px 5px 5px 5px; position: relative;}
+.link .rank {display:none;}
+.thing a {color: #fff!important;text-shadow: 1px 1px 2px #0029c1}
+.thing a:visited {color: #fff!important;}
+#siteTable a.title {color: #fff!important;}
+#siteTable a.title:visited {color: #fff!important;}
+
+div.content {margin-left: 25px; margin-bottom: 30px; margin-right: 355px; margin-top: 80px}
+
+/* Customization */
+/*Header and Banner*/
+#header {height: 180px; background: url(%%Banner%%) repeat; border-bottom: 1px solid black; margin-bottom: 48px}
+#header-bottom-left {position: absolute; bottom: 0; width: 100%; width: calc(100% - 15px);}
+.tabmenu {width: 100%; width: calc(100% - 15px); position: relative; top: 48px;}
+#header-bottom-right {background: #0008248f;height: 21px!important; line-height: 21px!important; top:initial!important; bottom:0!important;}
+#header-bottom-right a {color: #fff!important;text-shadow: 1px 1px 3px #0096ff}
+#header-bottom-right .userbarHide {color: #fff;text-shadow: 1px 1px 3px #0096ff}
+#header-bottom-right .userkarma {color: #fff;text-shadow: 1px 1px 3px #0096ff}
+#userbarToggle {background-color: #FFF!important; border:none!important;}
+#header-bottom-right .userbarShow {color: #fff!important;}
+#header-bottom-left .tabmenu a {background-color: transparent!important; border:none!important; color: #fff!important;
+text-shadow: 1px 1px 3px #0096ff;}
+#header-bottom-right .separator {color: #fff!important;}
+#sr-header-area {background-color: #0008248f!important; border:none!important; color:#ffffff!important;text-shadow: 1px 1px 3px #0096ff; z-index:1}
+#sr-header-area .sr-bar a {color: #fff!important;}
+#sr-header-area .dropdown.srdrop .selected {color: #fff!important;}
+#srLeftContainer a {color: #fff!important;text-shadow: 1px 1px 3px #0096ff}
+#RESShortcutsEditContainer {background-color: #FFF!important; border:none!important;}
+#RESShortcutsSort {background-color: #FFF!important; border:none!important; color:#fff!important;}
+#RESShortcutsRight {background-color: #FFF!important; border:none!important; color:#fff!important;}
+#RESShortcutsAdd {background-color: #FFF!important; border:none!important; color:#fff!important;}
+#RESShortcutsLeft {background-color: #FFF!important; border:none!important; color:#fff!important;}
+#header-bottom-right .message-count 
+
+/*Remove Res Selecter Highlight Fucker*/
+.tagline, .search-result-meta {color: #fff!important;}
+.res .RES-keyNav-activeElement .md-container, .res .RES-keyNav-activeElement, .res .commentarea .RES-keyNav-activeElement .md, .res .commentarea .RES-keyNav-activeElement.entry .noncollapsed {background: #transparent !important;}
+.res .entry.RES-keyNav-activeElement.res-selected,.res .entry.RES-keyNav-activeElement.res-selected .md-container{background-color:transparent !important}
+#thing_t3_8u82a8 a {background-color: transparent!important;}
+ul.tabmenu {background: url(%%tabmenu%%)!important; border: 15px double #fff; border-radius: 5px 5px 5px 5px}
+
+/* Rotating Banner */
+#header {background: url(%%Banner%%); height: 180px; 
+-webkit-animation: scroll 120s linear infinite; animation: scroll 70s linear infinite;}
+@-webkit-keyframes scroll {
+from { background-position: 0 0; }
+to   { background-position: -1646px 0; }}
+@keyframes scroll {
+from { background-position: 0 0; }
+to   { background-position: -1646px 0; }}
+
+/* Submit Page */
+.roundfield textarea, .roundfield input[type=text], .roundfield input[type=url], .roundfield input[type=password], .roundfield input[type=number]{font-size: 100%; width: 492px; padding: 3px; margin: 0; border: 1px solid #369}
+.gray {color: #fff}
+.submit-page #newlink.submit.content form .spacer+.spacer {margin: 0}
+.submit-page #newlink.submit.content ul.tabmenu.formtab {padding: 0; border: none}
+.submit-page #newlink.submit.content .btn {width: 61%; line-height: 41px; height: 42px; margin-top: 24px; background-color: #369; border: none; color: #fff; box-shadow: 0 1px 5px rgba(0, 0, 0, .24); cursor: pointer}
+#newlink button:hover,.submit-page #newlink.submit.content .btn:hover {box-shadow: 0 2px 12px rgba(0, 0, 0, .48); color: #fff; background-color: #B24F4E}
+h4,h5 {font-weight: 700!important}
+.submit-page #newlink.submit.content .tabmenu.formtab .selected a {font-size: 16px; background-color: #369; color: #fff; left: 0}
+.submit-page .tabmenu {position:relative; top: -40px; left: 0}
+.submit-page #newlink.submit.content .tabmenu.formtab a:hover {background-color: #e7e9f6}
+.submit-page #newlink.submit.content .tabmenu.formtab .selected a:hover {background-color: #369}
+.submit-page .formtabs-content {border-top: 0; padding-top: 0}
+.submit-page .roundfield {padding: 16px!important; width: 524px; background-color: #fff; border-radius: 2px; margin-bottom: 16px; box-shadow: 0 1px 5px rgba(0, 0, 0, .16); border: 1px solid #444240; color: #fff; background: rgb(102, 153, 204, 0.87)}
+.submit-page .infobar {width: 524px; margin: -10px 0 0; padding: 16px; color: #fff; background: rgb(102, 153, 204, 0.87); border: none; box-shadow: 0 1px 5px rgba(0, 0, 0, .24)}
+.content.submit .info-notice {background: #369; border: 1px solid #369; padding: 9px; margin-bottom: 12px; font-size: larger}
+.submit-page .roundfield .usertext-edit textarea {background-color: transparent; background-size: 506px 108px; background-repeat: no-repeat; -webkit-transition: background 0.25s linear; -moz-transition: background 0.25s linear; -o-transition: background 0.25s linear; transition: background 0.25s linear}
+.submit-page #header-bottom-left {top: 36px; left: 16px; height: 0}
+.roundfield textarea {width: 516px; background-color: #fff}
+.submit_text.roundfield.enabled {padding-bottom: 102px!important}
+#newlink>div.formtabs-content>div:nth-child(6)>div>span>div>h3 {color: #ff0; text-align: center; font-size: small}
+.submit-page .roundfield input[type=url]{width: 515px}
+.submit-page .footer-parent {padding-top: 15px; background: 0 0; margin-top: 40px}
+.submit-page {background-color: #fff!important; background-image: url(%%submit%%); background-repeat: no-repeat; background-size: auto; background-position: center; background-attachment: fixed}
+.submit-page .footer{margin-left: 470px}
+.submit-page .bottommenu{color:#000; margin-left: -355px}
+.submit-page .debuginfo{color:#FFF}
+.submit-page .content {z-index: 1; margin-top: 40px!important; width: 923px; margin: 0 auto; padding-top: 1px; background-repeat: no-repeat; background-position: bottom right}
+.submit-page #header-img {margin: 7px 0 0 27px; width: 73px; height: 73px}
+.submit-page #header {height: 0}
+.submit-page #header, .submit-page #header-img {display: none!important}
+.submit-page .roundfield .usertext-edit textarea {background-color: #fff; background-size: 506px 108px; border-color: red}
+.submit-page #header-bottom-right {top: 18px!important}
+#suggested-reddits, .submit-page .content>h1,.submit-page .side {display: none}
+.submit-page #header-bottom-right {top: 18px!important}
+.pagename {font-size: 0}
+html {min-height: 100%}
+.submit-page #newlink.submit.content .tabmenu.formtab a {padding: 16px; width: 246px; display: inline-block; text-align: center; background-color: #369!important; color: #FFFFFF!important; text-transform: uppercase; font-weight: 700; transition: all .25s ease; font-size: 16px; border: none}
+.submit-page a {color: #fff}
+.submit-page .md a {color: #0079D3!important}
+
+/*Background*/
+body { background: url(%%Background%%) repeat fixed center;}
+
+/*Mail*/
+#mail img {display: none}
+#mail.havemail {background: url(%%mail%%) no-repeat bottom center; width: 15px; height: 15px !important; display: inline-block}
+#mail.nohavemail {background: url(%%nomail%%) no-repeat bottom center; width: 15px; height: 15px !important; display: inline-block}
+
+/*Snoo*/
+.pagename a {display: block; background-image: url(%%logo%%); background-position: 0!important; background-repeat: no-repeat; font-size: 0px; padding: 51px 300px 0 0; color: #364657; top: -50px; left: 50px; position: absolute;}
+.pagename a:hover {background-image: url(%%logohover%%); background-position: 0!important; font-size: 0px; padding: 51px 300px 0 0; color: #364657; top: -50px; left: 50px; position: absolute;}
+
+#header-img.default-header {position: absolute;left: 310px; bottom: -3px; height: 180px; width: 214px; background:url(%%mclogo%%);}
+#header-img.default-header:hover {position: absolute; left: 310px; bottom: -3px; height: 180px; width: 214px; background:url(%%mchover%%);}
+
+/* Side Image*/
+h1.redditname{background: url(%%sidebar%%) no-repeat; position: relative; height: 426px}
+.titlebox h1 a{display:none}
+
+/* Footer */
+.footer-parent {padding-top: 400px; text-align: center; width: 100%; background: url(%%bottom%%) bottom center no-repeat; margin-bottom: -100px; margin-top: 0px}
+.footer {opacity:0; font-size:0; cursor:default}
+.footer-parent > p {background-color: #fff}
+p.debuginfo > span.icon, p.debuginfo > span.content {opacity: 0; font-size: 0; cursor: default}
+
+/* Changing the word moderators on top of moderators box */
+.sidecontentbox .helplink + .title h1 {font-size: 0}
+.sidecontentbox .helplink + .title h1:before {font-size: 10pt; content: "Meteor Torch Leaders"}
+.search-page .side a[href="https://nb.reddit.com/r/edenszero"], .search-page .side a[href="https://www.reddit.com/r/edenszero"]{right: -15px; top: -515px}
+
+/* Change the Message Moderators */
+.helplink {font-size: 0}
+.sidecontentbox a.helplink:after {content: "Message the Moderators"; position: absolute!important; top: 310px!important; right: 20px; width: 298px; height: 37px; background-color: #063b94; text-align: center; color: #fff; box-shadow: 0px 2px 4px rgba(0,0,0,.2); font-size: 16px; line-height: 37px; border-radius:2px; margin-top: 10px; border: 1px solid transparent}
+.search-page .sidecontentbox a.helplink:after {top: -3100px!important; right:0!important}
+.res .search-page .sidecontentbox a.helplink:after {top: -2995px!important; right:0!important}
+.comments-page .spacer .linkinfo {position: relative; top: 35px}
+.sidecontentbox a.helplink:hover:after {background-color:#5f96f2}
+.sidecontentbox .more a {font-size: 0}
+.sidecontentbox .more a:after {font-size: x-small; content: "About Meteor Torch Leaders»"}
+.res-nightmode body .content {background: transparent}
+
+/*Thumbnails*/
+.self .thumbnail {background: url(%%thumbnails%%) no-repeat 0 0; width: 70px; height: 70px}
+.spoiler .thumbnail {background: url(%%thumbnails%%) no-repeat 0 -70px; width: 70px; height: 70px}
+.stickied.link .thumbnail {background: url(%%thumbnails%%) no-repeat 0 -140px; width: 70px; height: 70px}
+.over18 .thumbnail img {display: none}
+.over18 .thumbnail {background: url(%%thumbnails%%); background-position: 0 -210px; height: 70px}
+
+/* Titles + User Flair */
+.author[href$="/11thDoctr"], .author[href$="/AstonishingSpiderMan"], .author[href$="/YonkouProductions"] {font-size: 12px; color: white !Important; text-decoration: none}
+a.author[href$="11thDoctr"]:before, a.author[href$="AstonishingSpiderMan"]:before, a.author[href$="YonkouProductions"]:before {text-decoration: none; font-size: 12px !important; text-shadow: 1px 1px #000000; font-weight: bold}
+a.author[href$="11thDoctr"],.res a.author[href$="11thDoctr"], a.author[href$="AstonishingSpiderMan"],.res a.author[href$="AstonishingSpiderMan"],a.author[href$="YonkouProductions"],.res a.author[href$="YonkouProductions"]{color: white!important; padding: 1px 4px 1px 4px; -moz-border-radius: 3px; -webkit-border-radius: 3px; border-radius: 3px}
+a.author[href$="YonkouProductions"]:before {content: ""; color:#FFFFFF!Important}
+a.author[href$="YonkouProductions"],.res a.author[href$="YonkouProductions"]{background-color:rgb(106, 113, 199) !important}
+a.author[href$="AstonishingSpiderMan"]:before {content: ""; color: #FFFFFF!Important}
+a.author[href$="AstonishingSpiderMan"],.res a.author[href$="AstonishingSpiderMan"]{background-color: #008080 !important}
+a.author[href$="11thDoctr"]:before {content: ""; color: white!Important}
+a.author[href$="11thDoctr"],.res a.author[href$ ="11thDoctr"]{background-color:#B22222!important}
+
+.flair {background: url(%%ezflair%%) -9999px no-repeat; font-size: small !important; border: 1px; padding: 0; overflow: hidden; text-indent: 10px; line-height: 30px; vertical-align: middle; display: inline-block; white-space: nowrap; position: relative; color: transparent !important; border-radius: 10px; border-color: black; border-style: solid}
+.flair[title]:after {content: attr(title); position: absolute; color: #FFF; font-family: Calibri; font-size: 110%; top: 0; left: -10px; background: #C00; box-shadow: 0 0 10px #fff; padding: 0 5px; border-radius: 3px 3px 3px 3px; white-space: nowrap; pointer-events: none; text-indent: 0; opacity:0;}
+.flair[title]:active:after, .flair[title]:active:before, .flair[title]:hover:after, .flair[title]:hover:before {transition: opacity .35s cubic-bezier(.1, .235, .215, 1.195),all .35s cubic-bezier(.1, .235, .215, 1.195); opacity:1; box-shadow: 0 1px 0 rgba(46, 46, 44, .5); left:40px;}
+.flair:hover {overflow: visible; color: transparent;}
+.flair[class*=flair-]{width: 40px; height: 40px; line-height: 30px; text-indent: -9999em; vertical-align: middle;}
+.flair[class*="flair-"].flair[title]:after {top: 10px; margin-left: 20px;}
+
+.flair-Yonkou {background-position: 0 0}
+.flair-Spidey {background-position: 0 -40px}
+.flair-Doctr {background-position: 0 -80px}
+.flair-01 {background-position: 0 -120px}
+.flair-02 {background-position: 0 -160px}
+.flair-03 {background-position: 0 -200px}
+.flair-04 {background-position: 0 -240px}
+.flair-05 {background-position: 0 -280px}
+.flair-06 {background-position: 0 -320px}
+.flair-07 {background-position: 0 -360px}
+.flair-08 {background-position: 0 -400px}
+.flair-09 {background-position: 0 -440px}
+.flair-10 {background-position: 0 -480px}
+.flair-11 {background-position: 0 -520px}
+.flair-12 {background-position: 0 -560px}
+.flair-13 {background-position: 0 -600px}
+.flair-14 {background-position: 0 -640px}
+.flair-15 {background-position: 0 -680px}
+.flair-16 {background-position: 0 -720px}
+.flair-17 {background-position: 0 -760px}
+.flair-18 {background-position: 0 -800px}
+.flair-19 {background-position: 0 -840px}
+.flair-20 {background-position: 0 -880px}
+.flair-21 {background-position: 0 -920px}
+
+/* Bug Fixes */
+.login-form-side {margin-top: 55px}
+.modtools-page > div.content{margin-top:75px}
+.submit-page .content > ul.tabmenu {position: relative; top: -40px}
+.search-page .spacer .titlebox {top: 100px!important}
+.search-page input[name=uh] ~ a:after, .search-page .user .login-required:after {top: 247px!important}
+.search-page .submit-link .morelink {margin-top: 140px}
+.search-page #moderation_tools, .search-page .spacer .sidecontentbox {position: relative; top: 100px}
+.search-page .side .md [href="http://www.reddit.com/r/edenszero"]{top: -595px!important; left: -950px!important}
+/* a.thumbnail > img {display: none} */
+.res-nightmode .linklisting .thing{background-color:transparent!important}
+.res-nightmode .side .spacer .titlebox, .res-nightmode .side .spacer .sidecontentbox {background-color:rgb(22, 22, 22)!important}
+.flairselector .author:before {display: none}
+.icon-menu a {background-color: transparent;}
