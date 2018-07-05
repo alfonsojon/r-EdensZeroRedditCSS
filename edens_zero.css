@@ -15,6 +15,10 @@
 .subscribers .number:after {content: " Cruising the Cosmos"}
 .users-online .number:after {content: " Visiting Blue Garden"}
 
+/* Flair Selector */
+.tabmenu li.selected a {color: orangered; background-color: none; border: 1px solid #5f99cf; border-bottom: 1px solid transparent; z-index: 100;}
+.tabmenu li a {padding: 2px 6px 0 6px; background-color: transparent;}
+
 /* Ads */
 div > iframe {display:none}
 #ad-frame, #ad_main {display: none}
@@ -48,7 +52,7 @@ p.tagline {padding: 5px 0;}
 .titlebox form.toggle, .leavemoderator{background-color:transparent}
 .side .spacer .titlebox, .side .spacer .sidecontentbox .content {padding: 5px; background: white; box-shadow: 0px 2px 4px rgba(0,0,0,.2); border-radius:1px; border:2px solid transparent; margin-top: 0px; margin-bottom: 0px;}
 .titlebox form.toggle, .leavemoderator{background-color:white}
-.sidecontentbox .title h1 {display: inline; text-transform: uppercase; margin: 0; color: gray; font-size: 130%}
+.sidecontentbox .title h1 {display: inline; text-transform: uppercase; margin: 0; color: white; font-size: 130%}
 .sidebox.create {display: none}
 .sidecontentbox .content{border:none}
 .md-container {margin-top: 10px}
@@ -77,6 +81,8 @@ ol li p, ul li p {display: inline}
 .md ol li:before {counter-increment: inc 1; content: counter(inc, decimal) '. '; margin-right: 4px; color: #999}
 
 /* Subscribe Buttons */
+.fancy-settings h1 strong {font-weight: bold; color: #FFF;}
+.fancy-settings h1 {font-size: 200%; color: #FFF; margin: 10px 5px;}
 .fancy-toggle-button {background-image: none; border: 0px; border-radius: 2px; font-weight: normal!important}
 .fancy-toggle-button .add {background-image: none; background-color: #D24256!important; border: 0px; border-radius: 2px; padding: 3px 6px; font-weight: normal!important}
 .fancy-toggle-button .remove {border: 0px; border-radius: 2px; padding: 3px 6px; background-color: #8B451; font-weight: normal!important}
@@ -95,11 +101,13 @@ ol li p, ul li p {display: inline}
 .linkinfo .shortlink input {border: 1px solid #E5E5E5; padding: 3px 6px}
 
 /* Search */
-#search input[type=submit]{top: 7px; position: relative; z-index: 200}
+#search input[type=submit]{top: -5px; position: relative; z-index: 200}
 body.res-nightmode #search {background-color: transparent; border-color: #BBB}
 .side .spacer:nth-of-type(1), .side .spacer:nth-of-type(2) {margin: 10}
 #search {white-space: nowrap}
-.side .spacer #search input[type=text]{z-index: 100; border: none; font-size: 14px; width: 300px; background: white; padding: 3px; margin-bottom: 10px; padding: 10px 25px 10px 16px; border-radius: 2px; margin-top: 35px; box-shadow: 0px 2px 4px rgba(0,0,0,.2); border: 1px solid transparent}
+
+.side .spacer #search input[type=text]{z-index: 100; border: none; font-size: 14px; width: 300px; background: white; padding: 3px; margin-bottom: 10px; padding: 10px 25px 10px 16px; border-radius: 2px; margin-top: -1px; box-shadow: 0px 2px 4px rgba(0,0,0,.2); border: 1px solid transparent}
+
 .res-nightmode .side .spacer #search input[type=text]{background-color: #444}
 #searchexpando, #moresearchinfo {box-shadow: 0px 2px 4px rgba(0,0,0,.2); border-radius: 2px; border:0px; position: absolute; z-index: 99; width: 300px; right: 10px; text-align:center}
 
@@ -131,15 +139,16 @@ body.res-nightmode .btn:hover, body.res-nightmode button:hover, body.res-nightmo
 .thing a:visited {color: #fff!important;}
 #siteTable a.title {color: #fff!important;}
 #siteTable a.title:visited {color: #fff!important;}
-
-div.content {margin-left: 25px; margin-bottom: 30px; margin-right: 355px; margin-top: 80px}
+div.content {margin-left: 25px; margin-bottom: 30px; margin-right: 355px; margin-top: 100px}
 
 /* Customization */
 /*Header and Banner*/
 #header {height: 180px; background: url(%%Banner%%) repeat; border-bottom: 1px solid black; margin-bottom: 48px}
 #header-bottom-left {position: absolute; bottom: 0; width: 100%; width: calc(100% - 15px);}
+
 .tabmenu {width: 100%; width: calc(100% - 15px); position: relative; top: 48px;}
-#header-bottom-right {background: #0008248f;height: 21px!important; line-height: 21px!important; top:initial!important; bottom:0!important;}
+
+#header-bottom-right {background: transparent; height: 21px!important; line-height: 21px!important; top: 190px!important; bottom: 0!important; right: 20px;}
 #header-bottom-right a {color: #fff!important;text-shadow: 1px 1px 3px #0096ff}
 #header-bottom-right .userbarHide {color: #fff;text-shadow: 1px 1px 3px #0096ff}
 #header-bottom-right .userkarma {color: #fff;text-shadow: 1px 1px 3px #0096ff}
@@ -175,6 +184,13 @@ to   { background-position: -1646px 0; }}
 @keyframes scroll {
 from { background-position: 0 0; }
 to   { background-position: -1646px 0; }}
+
+/* Spoiler Under Tab Menu */
+.link.self .expando-gate {width: 794px; border-radius: 7px}
+.expando-gate.expando-gate--interstitial {background-image: url("%%spoilerpreview%%"); width: 794px!important; height: 519px}
+.expando-gate {align-items: center; color: transparent; cursor: pointer; font-size: 12px; min-height: 75px; display:
+    -webkit-flex; display: flex;
+    -webkit-justify-content: center; justify-content: center}
 
 /* Submit Page */
 .roundfield textarea, .roundfield input[type=text], .roundfield input[type=url], .roundfield input[type=password], .roundfield input[type=number]{font-size: 100%; width: 492px; padding: 3px; margin: 0; border: 1px solid #369}
@@ -249,7 +265,9 @@ p.debuginfo > span.icon, p.debuginfo > span.content {opacity: 0; font-size: 0; c
 
 /* Change the Message Moderators */
 .helplink {font-size: 0}
-.sidecontentbox a.helplink:after {content: "Message the Moderators"; position: absolute!important; top: 310px!important; right: 20px; width: 298px; height: 37px; background-color: #063b94; text-align: center; color: #fff; box-shadow: 0px 2px 4px rgba(0,0,0,.2); font-size: 16px; line-height: 37px; border-radius:2px; margin-top: 10px; border: 1px solid transparent}
+
+.sidecontentbox a.helplink:after {content: "Message the Moderators"; position: absolute!important; top: 275px!important; right: 20px; width: 298px; height: 37px; background-color: #063b94; text-align: center; color: #fff; box-shadow: 0px 2px 4px rgba(0,0,0,.2); font-size: 16px; line-height: 37px; border-radius:2px; margin-top: 10px; border: 1px solid transparent}
+
 .search-page .sidecontentbox a.helplink:after {top: -3100px!important; right:0!important}
 .res .search-page .sidecontentbox a.helplink:after {top: -2995px!important; right:0!important}
 .comments-page .spacer .linkinfo {position: relative; top: 35px}
@@ -322,3 +340,4 @@ a.author[href$="11thDoctr"],.res a.author[href$ ="11thDoctr"]{background-color:#
 .res-nightmode .side .spacer .titlebox, .res-nightmode .side .spacer .sidecontentbox {background-color:rgb(22, 22, 22)!important}
 .flairselector .author:before {display: none}
 .icon-menu a {background-color: transparent;}
+.linefield .title {color: transparent;}
